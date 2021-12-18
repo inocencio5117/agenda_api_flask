@@ -41,7 +41,7 @@ class FlaskAgenda(Resource):
         int_id = int(contact_id)
         agenda.pop(int_id)
 
-        return agenda[int_id], 204
+        return agenda
 
 
 api.add_resource(FlaskAgenda, "/agenda/<string:contact_id>")
